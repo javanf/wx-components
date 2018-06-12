@@ -6,7 +6,7 @@
 
 ### 文件和文件夹命名
 * 文件夹和文件名采用英文小写字母命名，多个英语单词用 “-” 分割，不使用驼峰命名，如：hello-world
-* 编写组件使用 “c-” 打头，如：编写一个select组件，文件夹或者文件名定义[**c-select(点击可查看)**](http://gitlab.ziztour.loc/tmc/tmc-h5-flight/tree/dev/client/vue/components/c-select)
+* 编写组件使用 “c-” 打头，如：编写一个select组件，文件夹或者文件名定义c-select(点击可查看)
 
 ### 样式表命名
 * 样式表命名采用英文小写字母命名，多个英语单词用 “-” 分割，不使用驼峰命名，如：hello-world
@@ -28,11 +28,11 @@ let fooBar = 'hello eleme';
 
 ```JS
 // 不推荐
-let prefix = 'http://service.ziztour.net/api/';
-let Prefix = 'http://service.ziztour.net/api/'
+let prefix = 'http://github.com/api/';
+let Prefix = 'http://github.com/api/'
 
 // 推荐
-const PREFIX = 'http://service.ziztour.net/api/';
+const PREFIX = 'http://github.com/api/';
 ```
 
 * 定义dispatch或者commit的请求类型时，按照A_打头代表action，M_打头代表mutation的方式区分请求类型
