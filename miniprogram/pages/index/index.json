@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "list": "plugin://myPlugin/list",
+    "popup": "plugin://myPlugin/popup"
+  }
+}

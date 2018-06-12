@@ -1,0 +1,10 @@
+<view class="popup-warpper" wx:if="{{isShowPop}}" bingdtap="">
+  <view class="wrapper">
+    <view class='title' wx:if="{{needTitle}}">
+      <view class='cancel' catchtap="cancel">取消</view>
+      <view class='confirm' catchtap="confirm">确定</view>
+    </view>
+    <view class='title pop-title' wx:if="{{title}}">{{title}}</view>
+    <slot name="after"></slot>
+  </view>
+</view>
