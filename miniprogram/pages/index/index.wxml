@@ -5,7 +5,7 @@
     <text>{{sitem.name}}</text>
   </view>
 </view>
-<popup isShowPop="{{isShowPop}}" bindcancel="pCancel" bindconfirm="pConfirm">
+<popup needTitle="{{true}}" isShowPop="{{isShowPop}}" bindcancel="pCancel" bindconfirm="pConfirm">
   <view slot="after">
     <view class='select-ul'>
       <view catchtap='selectLi' data-item="{{item}}" class='li {{item.id==sitem.id?"active":""}}' wx:for="{{selectList}}" item="item" wx:key="key">{{item.name}}

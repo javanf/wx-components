@@ -37,9 +37,9 @@ Page({
       sitem: item
     });
     // 选择完关闭pop，也可以通过`确定`按钮关闭，如没有needTitle就自动关闭
-    this.setData({
-      isShowPop: false
-    });
+    // this.setData({
+    //   isShowPop: false
+    // });
     this.sitem = item;
   },
   pCancel() {

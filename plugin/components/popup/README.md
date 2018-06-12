@@ -1,4 +1,4 @@
-# popup组件
+# popup组件 git@github.com:javanf/wx-components.git
 
 > 注意:  `popup` 组件语法使用小程序，copy需做调整
 
@@ -18,7 +18,7 @@
       <view class='cancel' catchtap="cancel">取消</view>
       <view class='confirm' catchtap="confirm">确定</view>
     </view>
-    <view class='title pop-title' wx:if="{{title}}">{{title}}</view>
+    <view class='title pop-title' wx:elif="{{title}}">{{title}}</view>
     <slot name="after"></slot>
   </view>
 </view>
