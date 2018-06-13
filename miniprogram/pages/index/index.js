@@ -15,7 +15,11 @@ Page({
     }, {
       id: 4,
       name: '改签或退票因素'
-    }]
+    }],
+    isShowTipsPop: false,
+    isShowAlertPop: false,
+    isShowConfirmPop: false,
+    tipsTitle: ''
   },
   onLoad: function() {
     plugin.getData();
@@ -61,6 +65,42 @@ Page({
   showPop() {
     this.setData({
       isShowPop: true
+    });
+  },
+  // tips-popup
+  tPCancel() {
+    this.setData({
+      isShowTipsPop: false,
+      isShowAlertPop: false,
+      isShowConfirmPop:false
+    });
+  },
+  tPConfirm() {
+    this.setData({
+      isShowTipsPop: false,
+      isShowAlertPop: false,
+      isShowConfirmPop: false
+    });
+  },
+  showTipsPop() {
+    let vm = this;
+    vm.setData({
+      isShowTipsPop: true
+    });
+    setTimeout(function() {
+      vm.setData({
+        isShowTipsPop: false
+      });
+    }, 3000)
+  },
+  showAlertPop() {
+    this.setData({
+      isShowAlertPop: true
+    });
+  },
+  showConfirmPop() {
+    this.setData({
+      isShowConfirmPop: true
     });
   }
 })

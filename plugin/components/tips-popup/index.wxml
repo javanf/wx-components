@@ -1,0 +1,14 @@
+<view wx:if="{{isShowPop}}" bindtap="cancel" class="popcomfirm">
+  <view class="popup-content" catchtap="stopTap">
+    <view class="comfirm-t" catchtap="stopTap">
+      <view class="comtitle" wx:if="{{title}}">{{ title }}</view>
+      <view class="com-content text-c">
+        <slot name="tipspopup"></slot>
+      </view>
+      <view class="com-toobar" wx:if="{{type==2 || type==3}}">
+        <text wx:if="{{showCancel && type!=2}}" catchtap="cancel" class="toolbarbtn cancel">{{cancelText}}</text>
+        <text wx:if="{{showComfirm}}" catchtap="comfirm" class="toolbarbtn comfirm">{{comfirmText}}</text>
+      </view>
+    </view>
+  </view>
+</view>

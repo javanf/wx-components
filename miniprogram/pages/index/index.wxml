@@ -4,6 +4,9 @@
   <view class="sitem">已选择item: 
     <text>{{sitem.name}}</text>
   </view>
+  <button bindtap="showTipsPop">显示tips-pop组件</button>
+  <button bindtap="showAlertPop">显示alert-pop组件</button>
+  <button bindtap="showConfirmPop">显示confirm-pop组件</button>
 </view>
 <popup needTitle="{{true}}" isShowPop="{{isShowPop}}" bindcancel="pCancel" bindconfirm="pConfirm">
   <view slot="after">
@@ -14,3 +17,18 @@
     </view>
   </view>
 </popup>
+<tips-popup title="{{tipsTitle}}" isShowPop="{{isShowTipsPop}}" type="{{1}}" bindcancel="tPCancel" bindconfirm="tPConfirm">
+  <view slot="tipspopup">
+    <text>不要点击人家啦</text>
+  </view>
+</tips-popup>
+<tips-popup title="{{tipsTitle}}" isShowPop="{{isShowAlertPop}}" comfirmText="知道了" type="{{2}}" bindcancel="tPCancel" bindconfirm="tPConfirm">
+  <view slot="tipspopup">
+    <text>你即将中500万</text>
+  </view>
+</tips-popup>
+<tips-popup title="{{tipsTitle}}" isShowPop="{{isShowConfirmPop}}" type="{{3}}" bindcancel="tPCancel" bindconfirm="tPConfirm">
+  <view slot="tipspopup">
+    <text>你确定要使用我吗？</text>
+  </view>
+</tips-popup>

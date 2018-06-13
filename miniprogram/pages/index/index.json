@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "list": "plugin://myPlugin/list",
-    "popup": "plugin://myPlugin/popup"
+    "popup": "plugin://myPlugin/popup",
+    "tips-popup": "plugin://myPlugin/tips-popup"
   }
 }

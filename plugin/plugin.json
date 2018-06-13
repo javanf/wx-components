@@ -1,7 +1,8 @@
 {
   "publicComponents": {
     "list": "components/list/list",
-    "popup": "components/popup/index"
+    "popup": "components/popup/index",
+    "tips-popup": "components/tips-popup/index"
   },
   "main": "index.js"
 }

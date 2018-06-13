@@ -1,0 +1,128 @@
+.space-bottom {
+  height: 120rpx;
+}
+.czfooter-1 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.visibilitycz {
+  visibility: hidden;
+}
+.popcomfirm {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0,0,0,0.1);
+  z-index: 999;
+}
+.popcomfirm .popup-content {
+  width: 86%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 10rpx;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  max-height: 818rpx;
+  background: #fff;
+  overflow-y: auto;
+}
+.popcomfirm .comfirm-t {
+  border: 1rpx solid #f2f5fa;
+  border-radius: 10rpx;
+}
+.popcomfirm .comfirm-t .comtitle {
+  font-size: 34rpx;
+  color: #3b4f62;
+  height: 48rpx;
+  line-height: 48rpx;
+  text-align: center;
+  margin-top: 40rpx;
+}
+.popcomfirm .comfirm-t .com-content {
+  padding: 30rpx 18rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.popcomfirm .comfirm-t .com-content.text-c{
+  text-align: center;
+}
+.popcomfirm .comfirm-t .com-content .vio-list {
+  background: #fff;
+}
+.popcomfirm .comfirm-t .com-content .vio-list .vio-title {
+  font-size: 30rpx;
+  color: #3b4f62;
+  padding: 16rpx 20rpx 10rpx;
+}
+.popcomfirm .comfirm-t .com-content .vio-list .vio-emp {
+  font-size: 24rpx;
+  color: #abb7c2;
+  padding: 0 20rpx 12rpx;
+}
+.popcomfirm .comfirm-t .com-content .vio-list .vio-status {
+  position: relative;
+  color: #0cc071;
+  font-size: 30rpx;
+  line-height: 90rpx;
+  padding: 0 20rpx;
+  border-top: 1rpx solid #f2f5fa;
+}
+.popcomfirm .comfirm-t .com-content .vio-list .vio-status:after {
+  content: '';
+  display: block;
+  width: 44rpx;
+  height: 44rpx;
+  background: url("http://192.168.15.168:7310/images/right.png");
+  background-size: 100% 100%;
+  position: absolute;
+  right: 0;
+  top: 20rpx;
+}
+.popcomfirm .comfirm-t .com-content .vio-list .vio-status.disabled {
+  color: #abb7c2;
+}
+.popcomfirm .comfirm-t .com-content .vio-list .vio-status.disabled:after {
+  display: none;
+}
+.popcomfirm .comfirm-t .com-content .vio-list .vio-status.error {
+  color: #ee4747;
+}
+.popcomfirm .comfirm-t .com-content .vio-list .vio-status.error:after {
+  display: none;
+}
+.popcomfirm .comfirm-t .com-toobar {
+  height: 84rpx;
+  text-align: center;
+  margin-top: 20rpx;
+  margin-bottom: 30rpx;
+}
+.popcomfirm .comfirm-t .com-toobar .toolbarbtn {
+  font-size: 32rpx;
+  text-align: center;
+  line-height: 84rpx;
+  color: #3b4f62;
+  display: inline-block;
+  width: 260rpx;
+  border-radius: 8rpx;
+}
+.popcomfirm .comfirm-t .com-toobar .toolbarbtn:last-child {
+  border-right: 0rpx;
+}
+.popcomfirm .comfirm-t .com-toobar .toolbarbtn.cancel {
+  color: #fff;
+  background: #e2e2e2;
+  margin-right: 20rpx;
+}
+.popcomfirm .comfirm-t .com-toobar .toolbarbtn.comfirm {
+  color: #fff;
+  background: #0cc071;
+}
