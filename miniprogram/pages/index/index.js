@@ -30,6 +30,11 @@ Page({
     });
     this.sitem = sitem;
   },
+  showAnimation(){
+    wx.navigateTo({
+      url: '/pages/animation/index',
+    })
+  },
   /**
    * 选择属性
    * @param {} event 

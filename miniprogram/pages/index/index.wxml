@@ -7,6 +7,7 @@
   <button bindtap="showTipsPop">显示tips-pop组件</button>
   <button bindtap="showAlertPop">显示alert-pop组件</button>
   <button bindtap="showConfirmPop">显示confirm-pop组件</button>
+  <button bindtap="showAnimation">小程序动画</button>
 </view>
 <popup needTitle="{{true}}" isShowPop="{{isShowPop}}" bindcancel="pCancel" bindconfirm="pConfirm">
   <view slot="after">
